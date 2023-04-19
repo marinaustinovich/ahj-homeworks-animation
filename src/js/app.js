@@ -1,9 +1,10 @@
 import Modal from './Callback-Chat/Modal';
+import Collapse from './Collapse/Collapse';
 
 /* eslint-disable */
 console.log('it works!');
 
-const modal = new Modal(document.getElementById('chat-container'));
-
+new Modal(document.getElementById('chat-container'));
+new Collapse(document.getElementById('collapse-container'))
 
 
