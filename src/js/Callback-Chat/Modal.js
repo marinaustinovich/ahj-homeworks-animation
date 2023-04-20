@@ -5,7 +5,13 @@ export default class Modal {
     }
 
     this.container = container;
-    this.error = null;
+    this.errorContainer = null;
+    this.modal = null;
+    this.textEl = null;
+    this.submitButton = null;
+    this.openButton = null;
+    this.closeButton = null;
+
     this.drawUi();
     this.addEvents();
   }
@@ -65,11 +71,11 @@ export default class Modal {
   }
 
   showError(message) {
-    this.error.textContent = message;
-    this.error.style.display = 'block';
+    this.errorContainer.textContent = message;
+    this.errorContainer.style.display = 'block';
   }
 
   hideError() {
-    this.error.style.display = 'none';
+    this.errorContainer.style.display = 'none';
   }
 }

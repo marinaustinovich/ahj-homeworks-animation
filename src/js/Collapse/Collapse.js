@@ -21,8 +21,6 @@ export default class Collapse {
 
   addEvents() {
     const collapseBtn = this.container.querySelector('.show-collapse');
-    collapseBtn.addEventListener('click', () => {
-      this.container.querySelector('.content-collapse').classList.toggle('content-collapse_visible');
-    });
+    collapseBtn.addEventListener('click', () => this.container.querySelector('.content-collapse').classList.toggle('content-collapse_visible'));
   }
 }
