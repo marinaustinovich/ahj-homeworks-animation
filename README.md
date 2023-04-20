@@ -1,3 +1,4 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/eq85pshbxj76s9kd/branch/main?svg=true)](https://ci.appveyor.com/project/marinaustinovich/ahj-homeworks-animation/branch/main)
 
 ---
 
