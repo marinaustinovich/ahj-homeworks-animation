@@ -1,6 +1,6 @@
 {
   "name": "ahj-homeworks-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "three tasks about animation and css",
   "main": "index.js",
   "scripts": {
