@@ -1,3 +1,5 @@
+import './modal.css';
+
 export default class Modal {
   constructor(container) {
     if (!(container instanceof HTMLElement)) {
@@ -11,7 +13,9 @@ export default class Modal {
     this.submitButton = null;
     this.openButton = null;
     this.closeButton = null;
+  }
 
+  init() {
     this.drawUi();
     this.addEvents();
   }
@@ -56,12 +60,16 @@ export default class Modal {
   }
 
   showModal() {
-    this.modal.querySelector('.modal-content').classList.add('modal-content_visible');
+    this.modal
+      .querySelector('.modal-content')
+      .classList.add('modal-content_visible');
     this.openButton.classList.add('open-modal_click');
   }
 
   hideModal() {
-    this.modal.querySelector('.modal-content').classList.remove('modal-content_visible');
+    this.modal
+      .querySelector('.modal-content')
+      .classList.remove('modal-content_visible');
     this.openButton.classList.remove('open-modal_click');
   }
 

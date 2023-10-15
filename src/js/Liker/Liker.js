@@ -1,3 +1,5 @@
+import './liker.css';
+
 export default class Liker {
   constructor(container) {
     if (!(container instanceof HTMLElement)) {
@@ -5,17 +7,24 @@ export default class Liker {
     }
 
     this.container = container;
-    this.init();
   }
 
   init() {
+    this.drawUi();
+    this.events();
+  }
+
+  drawUi() {
     this.container.innerHTML = `
       <div class="like-wrapper">
         <button type="button" class="add-like">Like</button>
       </div>  
         `;
+  }
 
+  events() {
     const likeBtn = this.container.querySelector('.add-like');
+
     likeBtn.addEventListener('click', () => this.addLike());
   }
 

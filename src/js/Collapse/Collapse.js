@@ -1,3 +1,5 @@
+import './collapse.css';
+
 export default class Collapse {
   constructor(container) {
     if (!(container instanceof HTMLElement)) {
@@ -5,6 +7,9 @@ export default class Collapse {
     }
 
     this.container = container;
+  }
+
+  init() {
     this.drawUi();
     this.addEvents();
   }
@@ -21,6 +26,8 @@ export default class Collapse {
 
   addEvents() {
     const collapseBtn = this.container.querySelector('.show-collapse');
-    collapseBtn.addEventListener('click', () => this.container.querySelector('.content-collapse').classList.toggle('content-collapse_visible'));
+    collapseBtn.addEventListener('click', () => this.container
+      .querySelector('.content-collapse')
+      .classList.toggle('content-collapse_visible'));
   }
 }
